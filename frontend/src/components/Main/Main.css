@@ -1,0 +1,33 @@
+#main {
+  min-width: 390px;
+  border: solid rgb(224, 224, 224) 2px;
+  padding: 18px 18px 18px 18px;
+  margin: 0 50px;
+  height: max-content;
+  background-color: rgb(238, 238, 238);
+}
+
+#mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#errorMessage {
+  font-weight: bold;
+  font-size: 15px;
+  color: rgb(231, 0, 0);
+}
+
+#userCurrencyAccount {
+  font-weight: bold;
+  font-size: 18px;
+  color: green;
+}
+
+@media screen and (max-width: 530px) {
+  #main {
+    width: 390px;
+    margin: auto;
+  }
+}

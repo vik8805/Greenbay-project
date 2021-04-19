@@ -1,0 +1,70 @@
+#header {
+  margin: 0 50px;
+  padding: 0 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#header p{
+  min-width: fit-content;
+}
+
+#header-logged-out-button-box {
+  display: flex;
+  gap: 20px;
+}
+
+#header-logged-in-button-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#leftButtonBox {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#filterOptionBtn {
+  position: relative;
+}
+
+#dropdownList {
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  position: absolute;
+}
+
+#filterBtnBox:hover > #dropdownList,
+#filterBtnBox:focus-within > #dropdownList,
+#filterBtnBox #dropdownList:hover,
+#filterBtnBox #dropdownList:focus {
+   visibility: visible;
+}
+
+#filterOptionBtn {
+  clear: both;
+}
+
+@media screen and (max-width: 700px) {
+  #leftButtonBox {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  #header {
+    width: 390px;
+    margin: auto;
+    gap: 0;
+    justify-content: space-between;
+  }
+  #header-logged-in-button-box {
+    justify-content: space-evenly;
+  }
+}
